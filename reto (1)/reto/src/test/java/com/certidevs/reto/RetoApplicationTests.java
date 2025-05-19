@@ -3,8 +3,7 @@ package com.certidevs.reto;
 import com.certidevs.reto.entities.Proyecto;
 import com.certidevs.reto.entities.Tarea;
 import com.certidevs.reto.repositories.ProyectoRepository;
-import com.certidevs.reto.repositories.tareaRepository;
-import org.hibernate.procedure.ProcedureOutputs;
+import com.certidevs.reto.repositories.TareaRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -23,7 +22,7 @@ public class RetoApplication {
 
 		// obtener los repositorios
 		ProyectoRepository proyectoRepository = spring.getBean(ProyectoRepository.class);
-		tareaRepository tareaRepository = spring.getBean(tareaRepository.class);
+		TareaRepository tareaRepository = spring.getBean(TareaRepository.class);
 
 		// crear proyectos
 		Proyecto proyecto1 = new Proyecto("Web App", "Aplicación web",
